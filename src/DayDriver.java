@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class DayDriver {
     public static void main (String [] args){
-        int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a number for today"));
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter a number between 0-6 for today"));
         Day day=new Day(n%7);
 
     System.out.println("Today is " + day.getDay());
